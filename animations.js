@@ -1,12 +1,44 @@
 // Animations.js - Custom animations and transitions for Parsa Job Centre
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Page loader
+    // Page loader with Nepal flag design
     const pageLoader = document.createElement('div');
     pageLoader.className = 'page-loader';
-    const loaderSpinner = document.createElement('div');
-    loaderSpinner.className = 'loader-spinner';
-    pageLoader.appendChild(loaderSpinner);
+
+    // Create Nepal flag shape
+    const flagContainer = document.createElement('div');
+    flagContainer.className = 'nepal-flag';
+
+    // Create upper triangle
+    const upperTriangle = document.createElement('div');
+    upperTriangle.className = 'flag-triangle upper';
+
+    // Create lower triangle
+    const lowerTriangle = document.createElement('div');
+    lowerTriangle.className = 'flag-triangle lower';
+
+    // Create celestial elements
+    const sun = document.createElement('div');
+    sun.className = 'flag-sun';
+    const moon = document.createElement('div');
+    moon.className = 'flag-moon';
+
+    // Assemble flag components
+    upperTriangle.appendChild(sun);
+    lowerTriangle.appendChild(moon);
+    flagContainer.appendChild(upperTriangle);
+    flagContainer.appendChild(lowerTriangle);
+    pageLoader.appendChild(flagContainer);
+
+    // Create Nepal map animation
+    const mapContainer = document.createElement('div');
+    mapContainer.className = 'nepal-map';
+    mapContainer.innerHTML = `
+        <svg viewBox="0 0 100 100" class="map-svg">
+            <path class="map-path" d="M20,50 Q30,20 50,30 T80,40 Q90,60 70,70 T30,60 Z"/>
+        </svg>
+    `;
+    pageLoader.appendChild(mapContainer);
     document.body.appendChild(pageLoader);
 
     // Hide loader when page is fully loaded
@@ -114,4 +146,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-});
+}));
