@@ -1,10 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Page loader code remains the same
+    const pageLoader = document.createElement('div');
+    pageLoader.className = 'page-loader';
+    const loaderSpinner = document.createElement('div');
+    loaderSpinner.className = 'loader-spinner';
+    pageLoader.appendChild(loaderSpinner);
+    document.body.appendChild(pageLoader);
+
+    // Custom scrollbar implementation
     const body = document.body;
     const scrollContainer = document.createElement('div');
     const scrollbar = document.createElement('div');
     const scrollThumb = document.createElement('div');
 
-    // Setup scroll container
     scrollContainer.className = 'virtual-scroll-container';
     scrollbar.className = 'virtual-scrollbar';
     scrollThumb.className = 'virtual-scrollbar-thumb';
@@ -12,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollbar.appendChild(scrollThumb);
     body.appendChild(scrollbar);
 
-    // Calculate and update thumb height
     function updateThumbHeight() {
         const viewportHeight = window.innerHeight;
         const contentHeight = document.documentElement.scrollHeight;
@@ -21,29 +28,56 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollThumb.style.height = `${thumbHeight}px`;
     }
 
-    // Update thumb position
     function updateThumbPosition() {
         const scrollPercentage = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
         const thumbPosition = scrollPercentage * (scrollbar.clientHeight - scrollThumb.clientHeight);
         scrollThumb.style.transform = `translateY(${thumbPosition}px)`;
     }
 
-    // Handle scroll events
-    window.addEventListener('scroll', () => {
+    // Existing window load event
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            pageLoader.classList.add('loader-hidden');
+            setTimeout(() => {
+                pageLoader.remove();
+            }, 500);
+        }, 500);
+        
+        // Initialize scrollbar
+        updateThumbHeight();
         updateThumbPosition();
     });
 
-    // Handle resize events
+    // Combine scroll event listeners
+    window.addEventListener('scroll', () => {
+        updateThumbPosition();
+        
+        // Existing parallax effect
+        const scrollPosition = window.pageYOffset;
+        parallaxSections.forEach(section => {
+            const speed = 0.5;
+            const yPos = -(scrollPosition * speed);
+            section.style.backgroundPosition = `center ${yPos}px`;
+        });
+
+        // Existing text reveal
+        textElements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const elementVisible = 150;
+            
+            if (elementTop < window.innerHeight - elementVisible) {
+                element.classList.add('active');
+            }
+        });
+    });
+
+    // Add resize handler for scrollbar
     window.addEventListener('resize', () => {
         updateThumbHeight();
         updateThumbPosition();
     });
 
-    // Initialize
-    updateThumbHeight();
-    updateThumbPosition();
-
-    // Handle thumb drag
+    // Scrollbar drag functionality
     let isDragging = false;
     let startY = 0;
     let scrollStartY = 0;
@@ -68,4 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
         isDragging = false;
         document.body.style.userSelect = '';
     });
-}));
+
+    // ... rest of your existing code (cursor effect, text reveal, etc.) remains the same ...
+});
