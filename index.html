@@ -473,70 +473,234 @@
     </section>
 
           
-                <div class="feedback-direct">
-                    <h4>Quick Feedback</h4>
-                    <form class="feedback-form">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" rows="3" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit">Send Feedback</button>
-                    </form>
-                </div>
+                <!-- Footer Section -->
+<footer class="main-footer">
+  <div class="footer-container">
+    <div class="row">
+      <div class="footer-section">
+        <div class="feedback-direct">
+          <h4>Quick Feedback</h4>
+          <form class="feedback-form">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required>
             </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Feedback</button>
+          </form>
         </div>
+      </div>
+
+      <!-- Connect With Us -->
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/p/Parsa-Job-Center-PvtLtd-100095385249792/" target="_blank" class="social-icon facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://wa.me/+9779865313388" target="_blank" class="social-icon whatsapp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="viber://chat?number=%2B9779865313388" class="social-icon viber">
+            <i class="fab fa-viber"></i>
+          </a>
+        </div>
+      </div>
     </div>
+    <div class="copyright">
+      <p>&copy; 2025 Parsa Job Centre. All rights reserved.</p>
+      <p>Licensed by Government of Nepal</p>
+      <p>Designed by <a href="https://msr-portfolio.vercel.app/" target="_blank">MSR <i class="fas fa-code"></i></a></p>
+    </div>
+  </div>
 </footer>
-                <!-- Connect With Us -->
 
-            <div class="footer-section">
+<!-- CSS Styles -->
+<style>
+  /* Footer Styles */
+  .main-footer {
+    background: linear-gradient(135deg, #1a2a6c, #2a4858);
+    color: #f8f9fa;
+    padding: 60px 0 30px;
+    font-family: 'Poppins', sans-serif;
+  }
 
-                <h3>Connect With Us</h3>
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 
-                <div class="social-icons">
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
 
-                    <a href="https://www.facebook.com/p/Parsa-Job-Center-PvtLtd-100095385249792/" target="_blank" class="social-icon facebook">
+  .footer-section {
+    flex: 1;
+    min-width: 300px;
+  }
 
-                        <i class="fab fa-facebook-f"></i>
+  .footer-section h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+  }
 
-                    </a>
+  .footer-section h3:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: #4ecdc4;
+  }
 
-                    <a href="https://wa.me/+9779865313388" target="_blank" class="social-icon whatsapp">
+  .feedback-direct h4 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+  }
 
-                        <i class="fab fa-whatsapp"></i>
+  .feedback-direct h4:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background: #4ecdc4;
+  }
 
-                    </a>
+  .feedback-form .form-group {
+    margin-bottom: 15px;
+  }
 
-                    <a href="viber://chat?number=%2B9779865313388" class="social-icon viber">
+  .feedback-form input,
+  .feedback-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    transition: all 0.3s ease;
+    font-family: inherit;
+  }
 
-                        <i class="fab fa-viber"></i>
+  .feedback-form input::placeholder,
+  .feedback-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
 
-                    </a>
+  .feedback-form input:focus,
+  .feedback-form textarea:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(78, 205, 196, 0.5);
+  }
 
-                </div>
+  .btn-submit {
+    background: #4ecdc4;
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
 
-            </div>
+  .btn-submit:hover {
+    background: #36b1ac;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
 
-        </div>
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
 
-        
+  .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+  }
 
-        <div class="copyright">
+  .social-icon.facebook:hover {
+    background-color: #3b5998;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(59, 89, 152, 0.4);
+  }
 
-            <p>&copy; 2025 Parsa Job Centre. All rights reserved.</p>
+  .social-icon.whatsapp:hover {
+    background-color: #25d366;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+  }
 
-            <p>Licensed by Government of Nepal</p>
+  .social-icon.viber:hover {
+    background-color: #7360f2;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(115, 96, 242, 0.4);
+  }
 
-            <p>Designed by <a href="https://msr-portfolio.vercel.app/" target="_blank">MSR <i class="fas fa-code"></i></a></p>
+  .copyright {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
 
-        </div>
+  .copyright p {
+    margin: 5px 0;
+  }
 
-    </div>
+  .copyright a {
+    color: #4ecdc4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .copyright a:hover {
+    color: #ffffff;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+    
+    .footer-section {
+      margin-bottom: 30px;
+    }
+  }
+</style>
                 
 </footer>
     <div class="whatsapp-button">
