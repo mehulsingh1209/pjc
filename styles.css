@@ -1111,65 +1111,6 @@ footer {
     border-radius: 50%;
     font-size: 24px;
 
-/* Remove the Nepali datetime section from header */
-/* Delete or comment out the following class in your CSS */
-/* 
-.nepali-datetime {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-    margin-top: 10px;
-    font-size: 14px;
-    color: #666;
-}
-
-@media screen and (min-width: 768px) {
-    .nepali-datetime {
-        flex-direction: column;
-        align-items: center;
-        width: auto;
-        margin-top: 0;
-    }
-}
-*/
-
-/* Social Media Buttons - Combined and Enhanced */
-.social-float {
-    position: fixed;
-    bottom: 75px; /* Above bottom navigation */
-    right: 15px;
-    z-index: 99;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.social-float a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 24px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.social-float .whatsapp {
-    background-color: #25D366;
-}
-
-.social-float .facebook {
-    background-color: #3b5998; 
-}
-
-.social-float .viber {
-    background-color: #665CAC;
-}
 
 /* Apply hover effects only on non-touch devices */
 @media (hover: hover) {
@@ -1179,32 +1120,3 @@ footer {
     }
 }
 
-/* For touch devices, use active state */
-.social-float a:active {
-    transform: scale(0.95);
-}
-
-/* Adjust for larger screens */
-@media screen and (min-width: 992px) {
-    .social-float {
-        bottom: 30px; /* Lower position on desktop as no bottom nav */
-        right: 30px;
-    }
-}
-
-/* Add this HTML to your page: */
-/*
-<div class="social-float">
-    <a href="https://wa.me/9865313388" class="whatsapp" aria-label="Contact us on WhatsApp">
-        <i class="fab fa-whatsapp" aria-hidden="true"></i>
-    </a>
-    <a href="https://www.facebook.com/YourPageNameHere" class="facebook" aria-label="Visit our Facebook page">
-        <i class="fab fa-facebook-f" aria-hidden="true"></i>
-    </a>
-    <a href="viber://chat?number=+9865313388" class="viber" aria-label="Contact us on Viber">
-        <i class="fab fa-viber" aria-hidden="true"></i>
-    </a>
-</div>
-*/
-
-/* Remember to also remove the Nepali datetime HTML from your header */
