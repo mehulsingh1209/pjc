@@ -1296,65 +1296,6 @@
     </a>
 </div>
 
-<!-- CSS Styling for Social Media Buttons -->
-<style>
-    /* Common styling for all social media buttons */
-    .whatsapp-button,
-    .facebook-button,
-    .viber-button {
-        display: inline-block;
-        margin: 10px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        text-align: center;
-        position: relative;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-    }
-
-    .whatsapp-button a,
-    .facebook-button a,
-    .viber-button a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        text-decoration: none;
-    }
-
-    .whatsapp-button i,
-    .facebook-button i,
-    .viber-button i {
-        font-size: 24px;
-        color: white;
-    }
-
-    /* Button-specific colors */
-    .whatsapp-button {
-        background-color: #25D366;
-    }
-
-    .facebook-button {
-        background-color: #3b5998;
-    }
-
-    .viber-button {
-        background-color: #665CAC;
-    }
-
-    /* Hover effects */
-    .whatsapp-button:hover,
-    .facebook-button:hover,
-    .viber-button:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-    }
-</style>
-
-<style>
-/* Additional styles for the updated footer */
 
 </style>
     <!-- JavaScript -->
@@ -1384,49 +1325,6 @@
                 });
             });
             
-            // Nepali Date and Time
-            function updateNepaliDateTime() {
-                const now = new Date();
-                
-                // Simple clock display
-                const hours = now.getHours().toString().padStart(2, '0');
-                const minutes = now.getMinutes().toString().padStart(2, '0');
-                const seconds = now.getSeconds().toString().padStart(2, '0');
-                
-                document.getElementById('nepali-clock').textContent = `${hours}:${minutes}:${seconds}`;
-                
-                // This is a simplified approach - for actual Nepali date conversion
-                // you would need a proper Nepali calendar library
-                const options = { year: 'numeric', month: 'long', day: 'numeric' };
-                const englishDate = now.toLocaleDateString('en-US', options);
-                document.getElementById('nepali-date').textContent = englishDate;
-            }
             
-            // Update time immediately and then every second
-            updateNepaliDateTime();
-            setInterval(updateNepaliDateTime, 1000);
-            
-            // Form Submission
-            const contactForm = document.getElementById('contactForm');
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    // Here you would normally send the form data to a server
-                    alert('Thank you for your message! We will contact you soon.');
-                    this.reset();
-                });
-            }
-            
-            // Feedback Form
-            const feedbackForm = document.querySelector('.feedback-form');
-            if (feedbackForm) {
-                feedbackForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    alert('Thank you for your feedback!');
-                    this.reset();
-                });
-            }
-        });
-    </script>
 </body>
 </html>
