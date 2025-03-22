@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nepali-date-picker/2.0.1/nepali-datepicker.min.css">
     <script src="scroll.js" defer></script>
     <!-- Replace or add near your other script tags -->
-<script src="dist/main.js" type="module"></script>
+    <script src="dist/main.js" type="module"></script>
     <script src="animations.js" defer></script>
     <style>
         /* Interactive Contact Card Styles */
@@ -127,6 +127,82 @@
             .contact-grid {
                 grid-template-columns: 1fr;
             }
+        }
+        
+        /* Mobile Navigation Styles */
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+                padding: 10px;
+                background: none;
+                border: none;
+                font-size: 24px;
+                color: #333;
+                cursor: pointer;
+            }
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                padding: 20px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                z-index: 1000;
+            }
+            .nav-links.active {
+                display: block;
+            }
+            .nav-links li {
+                display: block;
+                margin: 15px 0;
+            }
+            /* Hero Section Mobile */
+            .hero-content h1 {
+                font-size: 28px;
+                line-height: 1.3;
+            }
+            .hero-content p {
+                font-size: 16px;
+            }
+            /* Job Categories Mobile */
+            .job-categories {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            /* Contact Cards Mobile */
+            .contact-grid {
+                grid-template-columns: 1fr;
+                padding: 0 15px;
+            }
+            .contact-card {
+                height: 180px;
+            }
+            /* Stats Mobile */
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            /* Partnership Mobile */
+            .partner-logos {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            /* Testimonials Mobile */
+            .testimonials {
+                flex-direction: column;
+            }
+            .testimonial {
+                width: 100%;
+                margin: 15px 0;
+            }
+        }
+        /* Touch-friendly buttons */
+        .btn, .nav-links a, .social-icon {
+            min-height: 44px;
+            min-width: 44px;
+            padding: 12px 20px;
         }
     </style>
 </head>
