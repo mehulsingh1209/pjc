@@ -1,4 +1,134 @@
 /* Base Styles */
+/* ... existing code ... */
+
+/* Section Background Enhancements */
+.about {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, #1a73e8 0%, #4caf50 100%);
+    border-radius: 50%;
+    opacity: 0.1;
+    top: -100px;
+    left: -100px;
+}
+
+.services {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    position: relative;
+}
+
+.services::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#1a73e8 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.stats {
+    background: linear-gradient(45deg, #1a73e8 0%, #0d47a1 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.job-types {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+}
+
+.job-types::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #1a73e8 25%, transparent 25%),
+                      linear-gradient(-45deg, #1a73e8 25%, transparent 25%);
+    background-size: 60px 60px;
+    opacity: 0.05;
+    top: 0;
+    left: 0;
+}
+
+.partnership {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    position: relative;
+}
+
+.success-stories {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.success-stories::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: radial-gradient(#4caf50 1px, transparent 1px),
+                      radial-gradient(#1a73e8 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    opacity: 0.05;
+}
+
+.contact {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    position: relative;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #1a73e8 25%, transparent 25%),
+                      linear-gradient(-45deg, #1a73e8 25%, transparent 25%);
+    background-size: 40px 40px;
+    opacity: 0.05;
+    top: 0;
+    left: 0;
+}
+
+.location {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Enhance section transitions */
+section {
+    position: relative;
+    z-index: 1;
+}
+
+section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.05));
+    pointer-events: none;
+}
+
+/* ... rest of existing code ... */
 * {
     margin: 0;
     padding: 0;
