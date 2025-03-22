@@ -2,6 +2,13 @@
 /* ... existing code ... */
 
 /* Section Background Enhancements */
+/* Hero Section - already has background */
+.hero {
+    /* ... existing styles ... */
+    background-blend-mode: overlay;
+}
+
+/* About Section */
 .about {
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     position: relative;
@@ -11,107 +18,92 @@
 .about::before {
     content: '';
     position: absolute;
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(45deg, #1a73e8 0%, #4caf50 100%);
-    border-radius: 50%;
-    opacity: 0.1;
-    top: -100px;
-    left: -100px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="rgba(255,255,255,0.1)" width="100" height="100"/></svg>');
+    opacity: 0.5;
 }
 
+/* Services Section */
 .services {
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    background: linear-gradient(45deg, #f9f9f9 0%, #ffffff 50%, #f9f9f9 100%);
     position: relative;
 }
 
-.services::after {
+.services::before {
     content: '';
     position: absolute;
+    top: 0;
+    left: 0;
     right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(#1a73e8 1px, transparent 1px);
-    background-size: 20px 20px;
-    opacity: 0.1;
-    pointer-events: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(26, 115, 232, 0.2), transparent);
 }
 
+/* Stats Section */
 .stats {
-    background: linear-gradient(45deg, #1a73e8 0%, #0d47a1 100%);
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
     position: relative;
     overflow: hidden;
 }
 
+/* Job Types Section */
 .job-types {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 50%, #ffffff 100%);
     position: relative;
 }
 
-.job-types::before {
+.job-types::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(45deg, #1a73e8 25%, transparent 25%),
-                      linear-gradient(-45deg, #1a73e8 25%, transparent 25%);
-    background-size: 60px 60px;
-    opacity: 0.05;
     top: 0;
     left: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle fill="rgba(26,115,232,0.03)" cx="50" cy="50" r="50"/></svg>');
+    background-size: 50px;
+    opacity: 0.5;
 }
 
+/* Partnership Section */
 .partnership {
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    background: linear-gradient(45deg, #ffffff 0%, #f8f9fa 100%);
     position: relative;
 }
 
+/* Success Stories Section */
 .success-stories {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: linear-gradient(-135deg, #f8f9fa 0%, #ffffff 100%);
     position: relative;
-    overflow: hidden;
 }
 
-.success-stories::after {
+.success-stories::before {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background-image: radial-gradient(#4caf50 1px, transparent 1px),
-                      radial-gradient(#1a73e8 1px, transparent 1px);
-    background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
-    opacity: 0.05;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="rgba(26,115,232,0.03)" d="M0 0h100v100H0z"/></svg>');
+    background-size: 20px;
+    opacity: 0.5;
 }
 
+/* Contact Section */
 .contact {
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    background: linear-gradient(45deg, #fafafa 0%, #ffffff 50%, #fafafa 100%);
     position: relative;
 }
 
-.contact::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(45deg, #1a73e8 25%, transparent 25%),
-                      linear-gradient(-45deg, #1a73e8 25%, transparent 25%);
-    background-size: 40px 40px;
-    opacity: 0.05;
-    top: 0;
-    left: 0;
-}
-
+/* Location Section */
 .location {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
     position: relative;
-    overflow: hidden;
 }
 
-/* Enhance section transitions */
+/* Add this for smooth section transitions */
 section {
     position: relative;
     z-index: 1;
@@ -122,12 +114,10 @@ section::after {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
-    height: 50px;
-    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.05));
-    pointer-events: none;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0,0,0,0.05), transparent);
 }
-
 /* ... rest of existing code ... */
 * {
     margin: 0;
