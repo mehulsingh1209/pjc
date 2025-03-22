@@ -580,13 +580,49 @@
             font-size: 16px;
         }
         
-       
+        /* Success Stories Section Styles */
+        .success-stories {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .testimonials-simple {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .testimonial {
+            margin-bottom: 40px;
+        }
+        
+        .quote {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .author-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        
+        .author-title {
+            font-size: 14px;
+            color: #666;
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="logo1.jpg" alt="Parsa Job Centre Logo">
+                <img src="/api/placeholder/50/50" alt="Parsa Job Centre Logo">
                 <h1>Parsa<span>Job Centre</span></h1>
             </div>
             <nav>
@@ -606,7 +642,7 @@
         </div>
     </header>
 
-    <section id="home" class="hero" style="background-image: url('BirgunjDroneView.webp'); background-size: cover; background-position: center;">
+    <section id="home" class="hero" style="background-image: url('/api/placeholder/1200/600'); background-size: cover; background-position: center;">
         <div class="container">
             <div class="hero-content">
                 <h1>Finding The Right Talent For Your Business</h1>
@@ -618,6 +654,7 @@
             </div>
         </div>
     </section>
+    
     <!-- About Us Section -->
     <section id="about" class="about-us">
         <div class="container">
@@ -656,89 +693,90 @@
                 </div>
                 
                 <div class="about-image">
-                    <img src="logo.jpg" alt="Parsa Job Centre Team">
+                    <img src="/api/placeholder/600/400" alt="Parsa Job Centre Team">
                 </div>
             </div>
         </div>
     </section>
 
     <section id="services" class="services">
-    <div class="container" style="padding: 0 15px; max-width: 1200px; margin: 0 auto;">
-        <div class="section-header" style="text-align: center; margin-bottom: 2rem;">
-            <h2 style="font-size: clamp(1.8rem, 5vw, 2.5rem); margin-bottom: 0.5rem;">Our Services</h2>
-            <p style="font-size: clamp(1rem, 3vw, 1.2rem); color: #666;">Comprehensive Employment Solutions</p>
-        </div>
-        
-        <div class="services-content" style="display: flex; flex-direction: column; gap: 2rem; margin-bottom: 2rem;">
-            <div class="services-text" style="width: 100%;">
-                <h3 style="font-size: clamp(1.4rem, 4vw, 1.8rem); margin-bottom: 1rem;">What We Offer</h3>
-                <p style="font-size: clamp(0.95rem, 3vw, 1rem); margin-bottom: 1rem; line-height: 1.6;">At Parsa Job Centre, we provide a comprehensive range of employment services designed to meet the diverse needs of both job seekers and employers throughout Nepal.</p>
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive Employment Solutions</p>
+            </div>
+            
+            <div class="services-content">
+                <div class="services-text">
+                    <h3>What We Offer</h3>
+                    <p>At Parsa Job Centre, we provide a comprehensive range of employment services designed to meet the diverse needs of both job seekers and employers throughout Nepal.</p>
+                    
+                    <p>Our dedicated team of recruitment specialists leverages years of industry experience and deep market knowledge to deliver tailored solutions that drive success for all our clients. Whether you're looking for your next career opportunity or seeking top talent for your organization, we have the expertise to help you achieve your goals.</p>
+                    
+                    <p>We pride ourselves on our personalized approach, attention to detail, and commitment to excellence in every service we provide.</p>
+                    
+                    <div class="services-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">3</div>
+                            <div class="stat-text">Core Services</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-text">Client Satisfaction</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-text">Support Available</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-text">Monthly Placements</div>
+                        </div>
+                    </div>
+                </div>
                 
-                <p style="font-size: clamp(0.95rem, 3vw, 1rem); margin-bottom: 1rem; line-height: 1.6;">Our dedicated team of recruitment specialists leverages years of industry experience and deep market knowledge to deliver tailored solutions that drive success for all our clients. Whether you're looking for your next career opportunity or seeking top talent for your organization, we have the expertise to help you achieve your goals.</p>
-                
-                <p style="font-size: clamp(0.95rem, 3vw, 1rem); margin-bottom: 1.5rem; line-height: 1.6;">We pride ourselves on our personalized approach, attention to detail, and commitment to excellence in every service we provide.</p>
-                
-                <div class="services-stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem; margin: 2rem 0;">
-                    <div class="stat-item" style="text-align: center; padding: 1rem; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-                        <div class="stat-number" style="font-size: clamp(1.8rem, 5vw, 2.2rem); font-weight: bold; color: #4a89dc; margin-bottom: 0.5rem;">3</div>
-                        <div class="stat-text" style="font-size: clamp(0.8rem, 2vw, 0.9rem);">Core Services</div>
-                    </div>
-                    <div class="stat-item" style="text-align: center; padding: 1rem; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-                        <div class="stat-number" style="font-size: clamp(1.8rem, 5vw, 2.2rem); font-weight: bold; color: #4a89dc; margin-bottom: 0.5rem;">100%</div>
-                        <div class="stat-text" style="font-size: clamp(0.8rem, 2vw, 0.9rem);">Client Satisfaction</div>
-                    </div>
-                    <div class="stat-item" style="text-align: center; padding: 1rem; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-                        <div class="stat-number" style="font-size: clamp(1.8rem, 5vw, 2.2rem); font-weight: bold; color: #4a89dc; margin-bottom: 0.5rem;">24/7</div>
-                        <div class="stat-text" style="font-size: clamp(0.8rem, 2vw, 0.9rem);">Support Available</div>
-                    </div>
-                    <div class="stat-item" style="text-align: center; padding: 1rem; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-                        <div class="stat-number" style="font-size: clamp(1.8rem, 5vw, 2.2rem); font-weight: bold; color: #4a89dc; margin-bottom: 0.5rem;">1000+</div>
-                        <div class="stat-text" style="font-size: clamp(0.8rem, 2vw, 0.9rem);">Monthly Placements</div>
-                    </div>
+                <div class="services-image">
+                    <img src="/api/placeholder/600/400" alt="Parsa Job Centre Services">
                 </div>
             </div>
             
-            <div class="services-image" style="width: 100%; text-align: center;">
-                <img src="services.jpg" alt="Parsa Job Centre Services" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
-            </div>
-        </div>
-        
-        <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px;">
-            <!-- Job Placement & Matching -->
-            <div class="service-card" style="border: 1px solid #eee; border-radius: 12px; padding: 25px 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%; display: flex; flex-direction: column;">
-                <div class="service-icon" style="margin-bottom: 20px; color: #4a89dc; font-size: 2rem; text-align: center;">
-                    <i class="fas fa-handshake" aria-hidden="true"></i>
+            <div class="services-grid">
+                <!-- Job Placement & Matching -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake" aria-hidden="true"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Job Placement & Matching</h3>
+                        <p>We connect qualified candidates with suitable employers based on skills, experience, and company requirements. Our personalized matching process ensures the right fit for both parties, considering cultural fit, career goals, and growth potential for long-term success.</p>
+                    </div>
                 </div>
-                <div class="service-content" style="flex-grow: 1;">
-                    <h3 style="font-size: clamp(1.2rem, 4vw, 1.5rem); margin-bottom: 1rem; color: #333; text-align: center;">Job Placement & Matching</h3>
-                    <p style="font-size: clamp(0.9rem, 3vw, 1rem); line-height: 1.6; color: #555;">We connect qualified candidates with suitable employers based on skills, experience, and company requirements. Our personalized matching process ensures the right fit for both parties, considering cultural fit, career goals, and growth potential for long-term success.</p>
+                
+                <!-- Skill Development & Training -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Skill Development & Training</h3>
+                        <p>We offer comprehensive skill development programs tailored to industry demands. Our training modules include technical skills, soft skills, and professional development workshops that help candidates enhance their employability and prepare for success in today's competitive job market.</p>
+                    </div>
                 </div>
-            </div>
-            
-            <!-- Skill Development & Training -->
-            <div class="service-card" style="border: 1px solid #eee; border-radius: 12px; padding: 25px 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%; display: flex; flex-direction: column;">
-                <div class="service-icon" style="margin-bottom: 20px; color: #4a89dc; font-size: 2rem; text-align: center;">
-                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
-                </div>
-                <div class="service-content" style="flex-grow: 1;">
-                    <h3 style="font-size: clamp(1.2rem, 4vw, 1.5rem); margin-bottom: 1rem; color: #333; text-align: center;">Skill Development & Training</h3>
-                    <p style="font-size: clamp(0.9rem, 3vw, 1rem); line-height: 1.6; color: #555;">We offer comprehensive skill development programs tailored to industry demands. Our training modules include technical skills, soft skills, and professional development workshops that help candidates enhance their employability and prepare for success in today's competitive job market.</p>
-                </div>
-            </div>
-            
-            <!-- International Job Placements -->
-            <div class="service-card" style="border: 1px solid #eee; border-radius: 12px; padding: 25px 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%; display: flex; flex-direction: column;">
-                <div class="service-icon" style="margin-bottom: 20px; color: #4a89dc; font-size: 2rem; text-align: center;">
-                    <i class="fas fa-globe-asia" aria-hidden="true"></i>
-                </div>
-                <div class="service-content" style="flex-grow: 1;">
-                    <h3 style="font-size: clamp(1.2rem, 4vw, 1.5rem); margin-bottom: 1rem; color: #333; text-align: center;">Support for International Job Placements</h3>
-                    <p style="font-size: clamp(0.9rem, 3vw, 1rem); line-height: 1.6; color: #555;">We provide end-to-end assistance for Nepali workers seeking opportunities abroad. Our services include documentation support, pre-departure training, cultural orientation, and ongoing support throughout the international employment process, ensuring safe and beneficial overseas employment.</p>
+                
+                <!-- International Job Placements -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe-asia" aria-hidden="true"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Support for International Job Placements</h3>
+                        <p>We provide end-to-end assistance for Nepali workers seeking opportunities abroad. Our services include documentation support, pre-departure training, cultural orientation, and ongoing support throughout the international employment process, ensuring safe and beneficial overseas employment.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    
     <!-- Job Types Section -->
     <section id="jobs" class="job-types">
         <div class="container">
@@ -855,180 +893,111 @@
         <div class="container">
             <div class="section-header">
                 <h2>Partnership Network</h2>
-                <p>Our Extensive Network of Business Partners</p>
+                <p>Our Valued Business Associates</p>
             </div>
             
             <div class="partner-stats">
-                <div class="partner-count">300+</div>
-                <div class="partner-text">Companies in Our Network</div>
+                <div class="partner-count">250+</div>
+                <div class="partner-text">Partner Companies Nationwide</div>
             </div>
             
             <div class="partner-categories">
                 <div class="partner-category">
-                    <i class="fas fa-building fa-3x" aria-hidden="true"></i>
-                    <h3>Small Businesses</h3>
-                    <p>Local enterprises and startups looking for talented individuals</p>
-                </div>
-                
-                <div class="partner-category">
                     <i class="fas fa-industry fa-3x" aria-hidden="true"></i>
                     <h3>Manufacturing</h3>
-                    <p>Production companies seeking skilled workers</p>
+                    <p>Partnering with leading manufacturing companies across Nepal to provide skilled labor and technical professionals.</p>
                 </div>
                 
                 <div class="partner-category">
                     <i class="fas fa-hotel fa-3x" aria-hidden="true"></i>
                     <h3>Hospitality</h3>
-                    <p>Hotels, restaurants, and tourism services</p>
+                    <p>Supporting hotels, restaurants, and tourism businesses with qualified staff for exceptional guest experiences.</p>
                 </div>
                 
                 <div class="partner-category">
-                    <i class="fas fa-shopping-cart fa-3x" aria-hidden="true"></i>
-                    <h3>Retail</h3>
-                    <p>Stores and shops requiring customer-facing staff</p>
-                </div>
-                
-                <div class="partner-category">
-                    <i class="fas fa-landmark fa-3x" aria-hidden="true"></i>
+                    <i class="fas fa-building fa-3x" aria-hidden="true"></i>
                     <h3>Corporate</h3>
-                    <p>Large enterprises and multinational companies</p>
+                    <p>Fulfilling staffing needs for corporate offices, from entry-level positions to executive management.</p>
                 </div>
                 
                 <div class="partner-category">
-                    <i class="fas fa-truck fa-3x" aria-hidden="true"></i>
-                    <h3>Logistics</h3>
-                    <p>Transportation and delivery companies</p>
+                    <i class="fas fa-store fa-3x" aria-hidden="true"></i>
+                    <h3>Retail</h3>
+                    <p>Providing customer-focused professionals for retail operations across the country.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Success Stories Section -->
-<section id="success" class="success-stories">
-    <div class="container">
-        <div class="section-header text-center">
-            <h2>Success Stories</h2>
-            <p>Real Impact in the Lives of Our Clients</p>
-        </div>
-        
-        <div class="testimonials-simple">
-            <div class="testimonial">
-                <p class="quote">"Parsa Job Centre helped me find the perfect accounting position after months of searching. Their counselors prepared me for interviews and negotiated a better salary than I expected!"</p>
-                <img src="/api/placeholder/60/60" alt="placeholder" class="hidden">
-                <h4 class="author-name">Rajesh Sharma</h4>
-                <p class="author-title">Accountant at Everest Bank</p>
+    <section id="success" class="success-stories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Success Stories</h2>
+                <p>What Our Clients Say About Us</p>
             </div>
             
-            <div class="testimonial">
-                <p class="quote">"As a business owner, finding reliable staff was always a challenge until I partnered with Parsa Job Centre. They understand our needs and consistently send qualified candidates."</p>
-                <img src="/api/placeholder/60/60" alt="placeholder" class="hidden">
-                <h4 class="author-name">Sita Thapa</h4>
-                <p class="author-title">Owner, Himalayan Cafe</p>
-            </div>
-            
-            <div class="testimonial">
-                <p class="quote">"After moving to Birgunj, I struggled to find work. The team at Parsa Job Centre not only found me a position as a security guard but also negotiated transportation benefits!"</p>
-                <img src="/api/placeholder/60/60" alt="placeholder" class="hidden">
-                <h4 class="author-name">Bikram Magar</h4>
-                <p class="author-title">Security Supervisor</p>
+            <div class="testimonials-simple">
+                <div class="testimonial">
+                    <p class="quote">"Parsa Job Centre has been instrumental in helping our company find qualified candidates quickly. Their understanding of our industry needs and thorough screening process has saved us countless hours in recruitment. We've been working with them for over 5 years now and consider them an extension of our HR team."</p>
+                    <p class="author-name">Rajesh Sharma</p>
+                    <p class="author-title">HR Director, Nepal Manufacturing Ltd.</p>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="quote">"As someone who had just graduated with limited experience, I was struggling to find employment. Parsa Job Centre not only helped me secure a position that matched my skills but also provided valuable guidance on interview preparation and resume building. Today, I'm working at a company I love, all thanks to their support."</p>
+                    <p class="author-name">Anita Thapa</p>
+                    <p class="author-title">Junior Accountant, Global Finance Solutions</p>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="quote">"We needed to quickly staff our new hotel in Pokhara and were facing challenges finding quality candidates. Parsa Job Centre delivered beyond our expectations, providing well-trained hospitality professionals within our tight timeline. Their candidates were well-prepared and fit perfectly with our company culture."</p>
+                    <p class="author-name">Deepak Adhikari</p>
+                    <p class="author-title">General Manager, Himalayan View Resort</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-
-<style>
-.success-stories {
-    padding: 60px 0;
-    background-color: #f9f9f9;
-}
-
-.section-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.section-header h2 {
-    font-size: 36px;
-    color: #2d3e50;
-    margin-bottom: 10px;
-}
-
-.section-header p {
-    font-size: 18px;
-    color: #666;
-}
-
-.testimonials-simple {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.testimonial {
-    margin-bottom: 40px;
-}
-
-.quote {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-.hidden {
-    display: none;
-}
-
-.author-name {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 5px 0;
-}
-
-.author-title {
-    font-size: 14px;
-    color: #666;
-    margin-top: 0;
-}
-</style>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="section-header">
                 <h2>Contact Us</h2>
-                <p>Reach Out for Job Opportunities and Recruitment Solutions</p>
+                <p>Get In Touch With Our Team</p>
             </div>
             
             <div class="contact-grid">
-                <!-- Phone Card -->
+                <!-- Phone Contact Card -->
                 <div class="contact-card">
                     <div class="card-front">
                         <div class="icon-circle">
                             <i class="fas fa-phone-alt" aria-hidden="true"></i>
                         </div>
                         <h3>Call Us</h3>
-                        <p>Tap to see phone numbers</p>
+                        <p>Tap to see our numbers</p>
                     </div>
                     <div class="card-back">
                         <div class="info-list">
                             <div class="info-item">
-                                <a href="tel:+9779855999911">+977 9855 999911</a>
+                                <a href="tel:+9779855021576">+977 9855021576</a>
                             </div>
                             <div class="info-item">
-                                <a href="tel:+9779845999911">+977 9845 999911</a>
+                                <a href="tel:+9779821216177">+977 9821216177</a>
                             </div>
                         </div>
-                        <div class="back-text">Tap to call</div>
+                        <p class="back-text">Tap to call directly</p>
                     </div>
                 </div>
                 
-                <!-- Email Card -->
+                <!-- Email Contact Card -->
                 <div class="contact-card">
                     <div class="card-front">
                         <div class="icon-circle">
                             <i class="fas fa-envelope" aria-hidden="true"></i>
                         </div>
                         <h3>Email Us</h3>
-                        <p>Tap to see email address</p>
+                        <p>Tap to see our email</p>
                     </div>
                     <div class="card-back">
                         <div class="info-list">
@@ -1036,172 +1005,163 @@
                                 <a href="mailto:info@parsajobcentre.com">info@parsajobcentre.com</a>
                             </div>
                             <div class="info-item">
-                                <a href="mailto:careers@parsajobcentre.com">careers@parsajobcentre.com</a>
+                                <a href="mailto:support@parsajobcentre.com">support@parsajobcentre.com</a>
                             </div>
                         </div>
-                        <div class="back-text">Tap to send email</div>
+                        <p class="back-text">Tap to send email</p>
                     </div>
                 </div>
                 
-                <!-- Location Card -->
+                <!-- Location Contact Card -->
                 <div class="contact-card">
                     <div class="card-front">
                         <div class="icon-circle">
                             <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                         </div>
                         <h3>Visit Us</h3>
-                        <p>Tap to see our address</p>
+                        <p>Tap to see our location</p>
                     </div>
                     <div class="card-back">
                         <div class="info-list">
                             <div class="info-item">
-                                <a href="https://www.google.com/maps/place/27%C2%B000'52.7%22N+84%C2%B053'03.0%22E/@27.0146427,84.8815956,17z/data=!3m1!4b1!4m4!3m3!8m2!3d27.0146427!4d84.8841705?entry=ttu&g_ep=EgoyMDI1MDMxOS4yIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank">
-                                    Panitanki, Near BPC College Old Building, Birgunj Ward Number 8<br>
-                                    Parsa, Nepal
+                                <a href="https://maps.google.com/?q=Birgunj,Nepal" target="_blank">
+                                    Adarshnagar, Birgunj
                                 </a>
                             </div>
+                            <div class="info-item">
+                                <p>Near Gandak Chowk</p>
+                            </div>
                         </div>
-                        <div class="back-text">Tap to open maps</div>
+                        <p class="back-text">Tap to view on map</p>
                     </div>
                 </div>
                 
-                <!-- Social Media Card -->
+                <!-- WhatsApp Contact Card -->
                 <div class="contact-card">
                     <div class="card-front">
                         <div class="icon-circle">
-                            <i class="fas fa-share-alt" aria-hidden="true"></i>
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
                         </div>
-                        <h3>Follow Us</h3>
-                        <p>Tap to see social media</p>
+                        <h3>WhatsApp</h3>
+                        <p>Tap to chat with us</p>
                     </div>
                     <div class="card-back">
                         <div class="info-list">
                             <div class="info-item">
-                                <a href="https://facebook.com/parsajobcentre" target="_blank">
-                                    <i class="fab fa-facebook" aria-hidden="true"></i> Facebook
+                                <a href="https://wa.me/9779855021576" target="_blank">
+                                    +977 9855021576
                                 </a>
                             </div>
                             <div class="info-item">
-                                <a href="https://instagram.com/parsajobcentre" target="_blank">
-                                    <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
+                                <a href="https://wa.me/9779821216177" target="_blank">
+                                    +977 9821216177
                                 </a>
                             </div>
                         </div>
-                        <div class="back-text">Tap to open</div>
+                        <p class="back-text">Tap to start chat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Fixed Button -->
+    <div class="whatsapp-button">
+        <a href="https://wa.me/9779855021576" aria-label="Chat with us on WhatsApp">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="row">
+                <div class="footer-section">
+                    <h3>About Parsa Job Centre</h3>
+                    <p>Established in 2014, we are a leading recruitment agency in Birgunj, Nepal. Our mission is to connect qualified candidates with top employers across all sectors.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#jobs">Job Types</a></li>
+                        <li><a href="#partnerships">Partnerships</a></li>
+                        <li><a href="#success">Success Stories</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Adarshnagar, Birgunj, Nepal</p>
+                    <p><i class="fas fa-phone"></i> +977 9855021576, +977 9821216177</p>
+                    <p><i class="fas fa-envelope"></i> info@parsajobcentre.com</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
             
-                        
-    <!-- Footer Section -->
-    <!-- Footer Section -->
-<!-- Footer Section -->
-<footer class="main-footer">
-    <div class="container footer-container">
-        <div class="row">
-            <div class="footer-section contact-section">
-                <h3>Contact Us</h3>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/p/Parsa-Job-Center-PvtLtd-100095385249792/" class="social-icon" aria-label="Facebook">
-                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://wa.me/9865313388" class="social-icon" aria-label="WhatsApp">
-                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
-                    </a>
-                    <a href="viber://chat?number=+9779865313388" class="social-icon" aria-label="Viber">
-                        <i class="fab fa-viber" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="footer-section feedback-section">
-                           
-            <div class="footer-section developer-section">
-                <h3>Website Developer</h3>
-                <div class="developer-box">
-                    <p>Developed by MSR</p>
-                    <a href="https://msr-portfolio.vercel.app/" class="developer-link" aria-label="Website Developer - MSR">
-                        <i class="fas fa-code" aria-hidden="true"></i> MSR
-                    </a>
-                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Parsa Job Centre. All Rights Reserved.</p>
             </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2025 Parsa Job Centre. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
+    </footer>
 
-<!-- WhatsApp Button - Updated with new number -->
-<div class="whatsapp-button">
-    <a href="https://wa.me/9865313388" aria-label="Contact us on WhatsApp">
-        <i class="fab fa-whatsapp" aria-hidden="true"></i>
-    </a>
-</div>
-
-    <!-- Facebook Button -->
-<div class="facebook-button">
-    <a href="https://www.facebook.com/p/Parsa-Job-Center-PvtLtd-100095385249792/" class="social-icon" aria-label="Facebook"" aria-label="Visit our Facebook page">
-        <i class="fab fa-facebook-f" aria-hidden="true"></i>
-    </a>
-</div>
-
-<!-- Viber Button -->
-<div class="viber-button">
-    <a href="viber://chat?number=+9779865313388" aria-label="Contact us on Viber">
-        <i class="fab fa-viber" aria-hidden="true"></i>
-    </a>
-</div>
-
-    <!-- Social Media Buttons -->
-<div class="whatsapp-button">
-    <a href="https://wa.me/9865313388" aria-label="Contact us on WhatsApp">
-        <i class="fab fa-whatsapp" aria-hidden="true"></i>
-    </a>
-</div>
-
-<div class="facebook-button">
-    <a href="https://www.facebook.com/YourPageNameHere" aria-label="Visit our Facebook page">
-        <i class="fab fa-facebook-f" aria-hidden="true"></i>
-    </a>
-</div>
-
-<div class="viber-button">
-    <a href="viber://chat?number=+9865313388" aria-label="Contact us on Viber">
-        <i class="fab fa-viber" aria-hidden="true"></i>
-    </a>
-</div>
-
-
-</style>
-    <!-- JavaScript -->
+    <!-- Scripts -->
     <script>
         // Mobile Menu Toggle
         document.addEventListener('DOMContentLoaded', function() {
-            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const menuButton = document.querySelector('.mobile-menu-btn');
             const navLinks = document.querySelector('.nav-links');
             
-            menuBtn.addEventListener('click', function() {
+            menuButton.addEventListener('click', function() {
                 navLinks.classList.toggle('active');
             });
             
-            // Close menu when clicking outside
-            document.addEventListener('click', function(event) {
-                if (!event.target.closest('nav')) {
+            // Close menu when clicking a link
+            const links = document.querySelectorAll('.nav-links a');
+            links.forEach(link => {
+                link.addEventListener('click', function() {
                     navLinks.classList.remove('active');
-                }
+                });
             });
             
-            // Contact Card Flip
-            const contactCards = document.querySelectorAll('.contact-card');
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 70,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
             
+            // Contact card flip functionality
+            const contactCards = document.querySelectorAll('.contact-card');
             contactCards.forEach(card => {
                 card.addEventListener('click', function() {
                     this.classList.toggle('flipped');
                 });
             });
-            
-            
+        });
+    </script>
 </body>
 </html>
