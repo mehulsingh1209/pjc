@@ -520,6 +520,60 @@
             font-size: 16px;
         }
         
+        /* Services Section Styles */
+        .services {
+            padding: 60px 0;
+            background-color: white;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background: var(--light-color);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .service-content h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+
+        .service-content p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
         /* Desktop Styles - Applied with Media Queries */
         @media (min-width: 768px) {
             .container {
@@ -596,6 +650,21 @@
             .partner-categories {
                 grid-template-columns: repeat(2, 1fr);
             }
+            
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .service-card {
+                text-align: left;
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            
+            .service-icon {
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
         }
         
         @media (min-width: 992px) {
@@ -605,6 +674,10 @@
             
             .partner-categories {
                 grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
         
@@ -659,60 +732,60 @@
     </section>
 
     <!-- Services Section -->
-<section id="services" class="services">
-    <div class="container">
-        <div class="section-header">
-            <h2>Our Services</h2>
-            <p>Comprehensive Employment Solutions</p>
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive Employment Solutions</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Job Placement & Matching -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake" aria-hidden="true"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Job Placement & Matching</h3>
+                        <p>We connect qualified candidates with suitable employers based on skills, experience, and company requirements. Our personalized matching process ensures the right fit for both parties.</p>
+                    </div>
+                </div>
+                
+                <!-- Career Counseling & Guidance -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-compass" aria-hidden="true"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Career Counseling & Guidance</h3>
+                        <p>Our expert counselors provide personalized career advice, resume building, interview preparation, and professional development guidance to help job seekers advance their careers.</p>
+                    </div>
+                </div>
+                
+                <!-- Job Fairs & Networking Events -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users" aria-hidden="true"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Organizing Job Fairs & Networking Events</h3>
+                        <p>We regularly host job fairs and networking events that bring together employers and job seekers, creating valuable opportunities for face-to-face interactions and on-the-spot interviews.</p>
+                    </div>
+                </div>
+                
+                <!-- Nationwide & Rural Outreach -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Nationwide & Rural Outreach</h3>
+                        <p>Our services extend beyond urban centers to rural communities across Nepal, ensuring job opportunities reach talented individuals in all regions and helping businesses find qualified staff nationwide.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="services-grid">
-            <!-- Job Placement & Matching -->
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-handshake" aria-hidden="true"></i>
-                </div>
-                <div class="service-content">
-                    <h3>Job Placement & Matching</h3>
-                    <p>We connect qualified candidates with suitable employers based on skills, experience, and company requirements. Our personalized matching process ensures the right fit for both parties.</p>
-                </div>
-            </div>
-            
-            <!-- Career Counseling & Guidance -->
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-compass" aria-hidden="true"></i>
-                </div>
-                <div class="service-content">
-                    <h3>Career Counseling & Guidance</h3>
-                    <p>Our expert counselors provide personalized career advice, resume building, interview preparation, and professional development guidance to help job seekers advance their careers.</p>
-                </div>
-            </div>
-            
-            <!-- Job Fairs & Networking Events -->
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-users" aria-hidden="true"></i>
-                </div>
-                <div class="service-content">
-                    <h3>Organizing Job Fairs & Networking Events</h3>
-                    <p>We regularly host job fairs and networking events that bring together employers and job seekers, creating valuable opportunities for face-to-face interactions and on-the-spot interviews.</p>
-                </div>
-            </div>
-            
-            <!-- Nationwide & Rural Outreach -->
-            <div class="service-card">
-                <div class="service-icon">
-                    <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
-                </div>
-                <div class="service-content">
-                    <h3>Nationwide & Rural Outreach</h3>
-                    <p>Our services extend beyond urban centers to rural communities across Nepal, ensuring job opportunities reach talented individuals in all regions and helping businesses find qualified staff nationwide.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- Job Types Section -->
     <section id="jobs" class="job-types">
@@ -866,243 +939,363 @@
                 <div class="partner-category">
                     <i class="fas fa-landmark fa-3x" aria-hidden="true"></i>
                     <h3>Corporate</h3>
-                    <p>Large companies and corporations with diverse staffing needs</p>
+                    <p>Large enterprises and multinational companies</p>
                 </div>
                 
                 <div class="partner-category">
-                    <i class="fas fa-heartbeat fa-3x" aria-hidden="true"></i>
-                    <h3>Service Sector</h3>
-                    <p>Various service providers looking for quality staff</p>
+                    <i class="fas fa-truck fa-3x" aria-hidden="true"></i>
+                    <h3>Logistics</h3>
+                    <p>Transportation and delivery companies</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <!-- Success Stories Section -->
+    <section id="success" class="success-stories">
         <div class="container">
             <div class="section-header">
-                <h2>Contact Us</h2>
-                <p>Get In Touch With Our Team</p>
+                <h2>Success Stories</h2>
+                <p>Real Impact in the Lives of Our Clients</p>
             </div>
             
-            <!-- Interactive Contact Cards with improved touch target sizes -->
-            <div class="contact-grid">
-                <!-- Person Card -->
-                <div class="contact-card" tabindex="0" aria-label="Contact Person Card">
-                    <div class="card-front">
-                        <div class="icon-circle">
-                            <i class="fas fa-user" aria-hidden="true"></i>
-                        </div>
-                        <h3>Contact Person</h3>
-                        <p>Tap to view details</p>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Parsa Job Centre helped me find the perfect accounting position after months of searching. Their counselors prepared me for interviews and negotiated a better salary than I expected!"</p>
                     </div>
-                    <div class="card-back">
-                        <h3>Contact Person</h3>
-                        <div class="info-list">
-                            <div class="info-item">
-                                <p>Bharat Bhushan Pandey</p>
-                            </div>
-                            <div class="info-item">
-                                <p>Recruitment Specialist</p>
-                            </div>
+                    <div class="testimonial-author">
+                        <img src="/api/placeholder/60/60" alt="placeholder" class="author-img">
+                        <div class="author-info">
+                            <h4>Rajesh Sharma</h4>
+                            <p>Accountant at Everest Bank</p>
                         </div>
-                        <p class="back-text">Tap to flip back</p>
                     </div>
                 </div>
                 
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a business owner, finding reliable staff was always a challenge until I partnered with Parsa Job Centre. They understand our needs and consistently send qualified candidates."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/api/placeholder/60/60" alt="placeholder" class="author-img">
+                        <div class="author-info">
+                            <h4>Sita Thapa</h4>
+                            <p>Owner, Himalayan Cafe</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"After moving to Birgunj, I struggled to find work. The team at Parsa Job Centre not only found me a position as a security guard but also negotiated transportation benefits!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/api/placeholder/60/60" alt="placeholder" class="author-img">
+                        <div class="author-info">
+                            <h4>Bikram Magar</h4>
+                            <p>Security Supervisor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-container">
+                <div class="stat-box">
+                    <div class="stat-number">5000+</div>
+                    <div class="stat-label">Successful Placements</div>
+                </div>
+                
+                <div class="stat-box">
+                    <div class="stat-number">85%</div>
+                    <div class="stat-label">Long-term Retention Rate</div>
+                </div>
+                
+                <div class="stat-box">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Reach Out for Job Opportunities and Recruitment Solutions</p>
+            </div>
+            
+            <div class="contact-grid">
                 <!-- Phone Card -->
-                <div class="contact-card" tabindex="0" aria-label="Phone Contact Card">
+                <div class="contact-card">
                     <div class="card-front">
                         <div class="icon-circle">
-                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            <i class="fas fa-phone-alt" aria-hidden="true"></i>
                         </div>
-                        <h3>Phone</h3>
-                        <p>Tap to view details</p>
+                        <h3>Call Us</h3>
+                        <p>Tap to see phone numbers</p>
                     </div>
                     <div class="card-back">
-                        <h3>Call Us</h3>
                         <div class="info-list">
                             <div class="info-item">
-                                <a href="tel:9865313388" aria-label="Call 9865313388">9865313388</a>
+                                <a href="tel:+9779855999911">+977 9855 999911</a>
                             </div>
                             <div class="info-item">
-                                <a href="tel:9817213384" aria-label="Call 9817213384">9817213384</a>
+                                <a href="tel:+9779845999911">+977 9845 999911</a>
                             </div>
                         </div>
-                        <p class="back-text">Tap to flip back</p>
+                        <div class="back-text">Tap to call</div>
                     </div>
                 </div>
                 
                 <!-- Email Card -->
-                <div class="contact-card" tabindex="0" aria-label="Email Contact Card">
+                <div class="contact-card">
                     <div class="card-front">
                         <div class="icon-circle">
                             <i class="fas fa-envelope" aria-hidden="true"></i>
                         </div>
-                        <h3>Email</h3>
-                        <p>Tap to view details</p>
+                        <h3>Email Us</h3>
+                        <p>Tap to see email address</p>
                     </div>
                     <div class="card-back">
-                        <h3>Email Us</h3>
                         <div class="info-list">
                             <div class="info-item">
-                                <a href="mailto:bharatbhushanp8@gmail.com" aria-label="Email bharatbhushanp8@gmail.com">bharatbhushanp8@gmail.com</a>
+                                <a href="mailto:info@parsajobcentre.com">info@parsajobcentre.com</a>
                             </div>
                             <div class="info-item">
-                                <a href="mailto:parsajobcenter4u@gmail.com" aria-label="Email parsajobcenter4u@gmail.com">parsajobcenter4u@gmail.com</a>
+                                <a href="mailto:careers@parsajobcentre.com">careers@parsajobcentre.com</a>
                             </div>
                         </div>
-                        <p class="back-text">Tap to flip back</p>
+                        <div class="back-text">Tap to send email</div>
                     </div>
                 </div>
                 
                 <!-- Location Card -->
-                <div class="contact-card" tabindex="0" aria-label="Location Contact Card">
+                <div class="contact-card">
                     <div class="card-front">
                         <div class="icon-circle">
                             <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                         </div>
-                        <h3>Location</h3>
-                        <p>Tap to view details</p>
+                        <h3>Visit Us</h3>
+                        <p>Tap to see our address</p>
                     </div>
                     <div class="card-back">
-                        <h3>Find Us</h3>
                         <div class="info-list">
-                            <div class="info-item"
-                                <p>Adarshnagar-3, Birgunj</p>
-                            </div>
                             <div class="info-item">
-                                <p>Parsa, Nepal</p>
-                            </div>
-                            <div class="info-item">
-                                <a href="https://goo.gl/maps/yourLocationLink" target="_blank" aria-label="View on Google Maps">View on Map</a>
+                                <a href="https://goo.gl/maps/YourLocationLink" target="_blank">
+                                    Adarshanagar, Birgunj<br>
+                                    Parsa, Nepal
+                                </a>
                             </div>
                         </div>
-                        <p class="back-text">Tap to flip back</p>
+                        <div class="back-text">Tap to open maps</div>
                     </div>
                 </div>
+                
+                <!-- Social Media Card -->
+                <div class="contact-card">
+                    <div class="card-front">
+                        <div class="icon-circle">
+                            <i class="fas fa-share-alt" aria-hidden="true"></i>
+                        </div>
+                        <h3>Follow Us</h3>
+                        <p>Tap to see social media</p>
+                    </div>
+                    <div class="card-back">
+                        <div class="info-list">
+                            <div class="info-item">
+                                <a href="https://facebook.com/parsajobcentre" target="_blank">
+                                    <i class="fab fa-facebook" aria-hidden="true"></i> Facebook
+                                </a>
+                            </div>
+                            <div class="info-item">
+                                <a href="https://instagram.com/parsajobcentre" target="_blank">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
+                                </a>
+                            </div>
+                        </div>
+                        <div class="back-text">Tap to open</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <h3>Send Us a Message</h3>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="job-seeking">Looking for a job</option>
+                            <option value="hiring">Looking to hire</option>
+                            <option value="partnership">Business partnership</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- WhatsApp Button -->
-    <div class="whatsapp-button">
-        <a href="https://wa.me/9779865313388" aria-label="Contact us on WhatsApp">
-            <i class="fab fa-whatsapp" aria-hidden="true"></i>
-        </a>
-    </div>
-
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer class="main-footer">
         <div class="container footer-container">
             <div class="row">
-                <div class="footer-section">
+                <div class="footer-section about-section">
                     <h3>About Parsa Job Centre</h3>
-                    <p>Established in 2014, Parsa Job Centre has been connecting qualified candidates with top employers in Birgunj and beyond. We pride ourselves on our deep understanding of the local job market and our commitment to quality service.</p>
+                    <p>Established in 2014, Parsa Job Centre has been a trusted recruitment partner in Birgunj, Nepal. We connect qualified candidates with top employers and provide comprehensive employment solutions.</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/parsajobcentre" class="social-icon" aria-label="Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://instagram.com/parsajobcentre" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/parsajobcentre" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com/parsajobcentre" class="social-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </div>
                 </div>
-
-                <div class="footer-section">
+                
+                <div class="footer-section links-section">
                     <h3>Quick Links</h3>
-                    <ul>
+                    <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#jobs">Job Types</a></li>
                         <li><a href="#partnerships">Partnerships</a></li>
                         <li><a href="#success">Success Stories</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-section">
-                    <h3>Send Us Feedback</h3>
+                
+                <div class="footer-section feedback-section">
+                    <h3>Feedback</h3>
                     <form class="feedback-form">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
                         <div class="form-group">
                             <input type="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="4" required></textarea>
+                            <textarea placeholder="Your Feedback" rows="3" required></textarea>
                         </div>
-                        <button type="submit" class="btn primary-btn btn-submit">Send Message</button>
+                        <button type="submit" class="btn-submit">Submit Feedback</button>
                     </form>
                 </div>
             </div>
-
-            <div class="social-media">
-                <h3>Connect With Us</h3>
-                <div class="social-icons">
-                    <a href="#" class="social-icon" aria-label="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="social-icon" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="social-icon" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" class="social-icon" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="copyright">
-                <p>&copy; 2025 Parsa Job Centre. All Rights Reserved.</p>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Parsa Job Centre. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-button">
+        <a href="https://wa.me/9779855999911" aria-label="Contact us on WhatsApp">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <!-- JavaScript -->
     <script>
-        // Mobile Navigation Toggle
+        // Mobile Menu Toggle
         document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
             const navLinks = document.querySelector('.nav-links');
             
-            mobileMenuBtn.addEventListener('click', function() {
+            menuBtn.addEventListener('click', function() {
                 navLinks.classList.toggle('active');
             });
             
-            // Simple Nepali Date and Time display
-            function updateNepaliDateTime() {
-                const now = new Date();
-                const nepaliClockElement = document.getElementById('nepali-clock');
-                const nepaliDateElement = document.getElementById('nepali-date');
-                
-                // Format time
-                const hours = now.getHours().toString().padStart(2, '0');
-                const minutes = now.getMinutes().toString().padStart(2, '0');
-                const seconds = now.getSeconds().toString().padStart(2, '0');
-                nepaliClockElement.textContent = `${hours}:${minutes}:${seconds}`;
-                
-                // This is a simplified approach - a real implementation would use a Nepali date conversion library
-                const options = { year: 'numeric', month: 'long', day: 'numeric' };
-                const dateStr = now.toLocaleDateString('en-US', options);
-                nepaliDateElement.textContent = dateStr;
-            }
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('nav')) {
+                    navLinks.classList.remove('active');
+                }
+            });
             
-            // Initial call and set interval
-            updateNepaliDateTime();
-            setInterval(updateNepaliDateTime, 1000);
-            
-            // Add card flip functionality for touch devices
+            // Contact Card Flip
             const contactCards = document.querySelectorAll('.contact-card');
             
             contactCards.forEach(card => {
                 card.addEventListener('click', function() {
                     this.classList.toggle('flipped');
                 });
-                
-                card.addEventListener('keydown', function(e) {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                        this.classList.toggle('flipped');
-                    }
-                });
             });
+            
+            // Nepali Date and Time
+            function updateNepaliDateTime() {
+                const now = new Date();
+                
+                // Simple clock display
+                const hours = now.getHours().toString().padStart(2, '0');
+                const minutes = now.getMinutes().toString().padStart(2, '0');
+                const seconds = now.getSeconds().toString().padStart(2, '0');
+                
+                document.getElementById('nepali-clock').textContent = `${hours}:${minutes}:${seconds}`;
+                
+                // This is a simplified approach - for actual Nepali date conversion
+                // you would need a proper Nepali calendar library
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                const englishDate = now.toLocaleDateString('en-US', options);
+                document.getElementById('nepali-date').textContent = englishDate;
+            }
+            
+            // Update time immediately and then every second
+            updateNepaliDateTime();
+            setInterval(updateNepaliDateTime, 1000);
+            
+            // Form Submission
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // Here you would normally send the form data to a server
+                    alert('Thank you for your message! We will contact you soon.');
+                    this.reset();
+                });
+            }
+            
+            // Feedback Form
+            const feedbackForm = document.querySelector('.feedback-form');
+            if (feedbackForm) {
+                feedbackForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Thank you for your feedback!');
+                    this.reset();
+                });
+            }
         });
     </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/nepali-date-picker/2.0.1/nepali-datepicker.min.js"></script>
 </body>
 </html>
