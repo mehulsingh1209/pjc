@@ -340,6 +340,125 @@
             transform: scale(1.1);
         }
         
+        /* Job Types Section Styles */
+        .job-types {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .section-header h2 {
+            font-size: 28px;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+        }
+        
+        .section-header p {
+            font-size: 16px;
+            color: #777;
+        }
+        
+        .job-categories {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .job-category {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            align-items: center;
+        }
+        
+        .job-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .job-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .job-details h3 {
+            font-size: 18px;
+            margin: 0 0 5px;
+            color: var(--dark-color);
+        }
+        
+        .job-details p {
+            font-size: 14px;
+            color: #777;
+            margin: 0;
+        }
+        
+        /* Partnership Network Section Styles */
+        .partnerships {
+            padding: 60px 0;
+            background-color: white;
+        }
+        
+        .partner-stats {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .partner-count {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .partner-text {
+            font-size: 18px;
+        }
+        
+        .partner-categories {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        
+        .partner-category {
+            background: var(--light-color);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        
+        .partner-category h3 {
+            margin-top: 0;
+            color: var(--dark-color);
+            font-size: 20px;
+        }
+        
+        .partner-category p {
+            color: #777;
+        }
+        
         /* Footer Mobile Styles */
         .main-footer {
             background: linear-gradient(135deg, #1a2a6c, #2a4858);
@@ -469,6 +588,24 @@
                 flex: 1;
                 min-width: 300px;
             }
+            
+            .job-categories {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .partner-categories {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .job-categories {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .partner-categories {
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
         
         /* Accessibility improvements */
@@ -500,6 +637,7 @@
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#jobs">Job Types</a></li>
+                    <li><a href="#partnerships">Partnerships</a></li>
                     <li><a href="#success">Success Stories</a></li>
                     <li><a href="#contact" class="cta-btn">Contact Us</a></li>
                 </ul>
@@ -520,7 +658,169 @@
         </div>
     </section>
 
-    <!-- More sections with the same structure but improved... -->
+    <!-- Job Types Section -->
+    <section id="jobs" class="job-types">
+        <div class="container">
+            <div class="section-header">
+                <h2>Job Types</h2>
+                <p>Explore Various Career Opportunities</p>
+            </div>
+            
+            <div class="job-categories">
+                <!-- Labour -->
+                <div class="job-category">
+                    <div class="job-icon">
+                        <i class="fas fa-hard-hat" aria-hidden="true"></i>
+                    </div>
+                    <div class="job-details">
+                        <h3>Labour</h3>
+                        <p>Physical work opportunities in various industries</p>
+                    </div>
+                </div>
+                
+                <!-- Peon -->
+                <div class="job-category">
+                    <div class="job-icon">
+                        <i class="fas fa-broom" aria-hidden="true"></i>
+                    </div>
+                    <div class="job-details">
+                        <h3>Peon</h3>
+                        <p>Office support and assistance roles</p>
+                    </div>
+                </div>
+                
+                <!-- Guard -->
+                <div class="job-category">
+                    <div class="job-icon">
+                        <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    </div>
+                    <div class="job-details">
+                        <h3>Guard</h3>
+                        <p>Security and protection services</p>
+                    </div>
+                </div>
+                
+                <!-- Accountant -->
+                <div class="job-category">
+                    <div class="job-icon">
+                        <i class="fas fa-calculator" aria-hidden="true"></i>
+                    </div>
+                    <div class="job-details">
+                        <h3>Accountant</h3>
+                        <p>Financial management and bookkeeping</p>
+                    </div>
+                </div>
+                
+                <!-- Waiter -->
+                <div class="job-category">
+                    <div class="job-icon">
+                        <i class="fas fa-utensils" aria-hidden="true"></i>
+                    </div>
+                    <div class="job-details">
+                        <h3>Waiter</h3>
+                        <p>Food service and customer care</p>
+                    </div>
+                </div>
+                
+                <!-- Receptionist -->
+                <div class="job-category">
+                    <div class="job-icon">
+                        <i class="fas fa-concierge-bell" aria-hidden="true"></i>
+                    </div>
+                    <div class="job-details">
+                        <h3>Receptionist</h3>
+                        <p>Front desk and guest relations</p>
+                    </div>
+                </div>
+                
+                <!-- Sales Man -->
+                <div class="job-category">
+                    <div class="job-icon">
+                        <i class="fas fa-handshake" aria-hidden="true"></i>
+                    </div>
+                    <div class="job-details">
+                        <h3>Sales Man</h3>
+                        <p>Product and service selling</p>
+                    </div>
+                </div>
+                
+                <!-- Area Sales Manager -->
+                <div class="job-category">
+                    <div class="job-icon">
+                        <i class="fas fa-chart-line" aria-hidden="true"></i>
+                    </div>
+                    <div class="job-details">
+                        <h3>Area Sales Manager</h3>
+                        <p>Regional sales team leadership</p>
+                    </div>
+                </div>
+                
+                <!-- Supervisor -->
+                <div class="job-category">
+                    <div class="job-icon">
+                        <i class="fas fa-tasks" aria-hidden="true"></i>
+                    </div>
+                    <div class="job-details">
+                        <h3>Supervisor</h3>
+                        <p>Team management and oversight</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Network Section -->
+    <section id="partnerships" class="partnerships">
+        <div class="container">
+            <div class="section-header">
+                <h2>Partnership Network</h2>
+                <p>Our Extensive Network of Business Partners</p>
+            </div>
+            
+            <div class="partner-stats">
+                <div class="partner-count">300+</div>
+                <div class="partner-text">Companies in Our Network</div>
+            </div>
+            
+            <div class="partner-categories">
+                <div class="partner-category">
+                    <i class="fas fa-building fa-3x" aria-hidden="true"></i>
+                    <h3>Small Businesses</h3>
+                    <p>Local enterprises and startups looking for talented individuals</p>
+                </div>
+                
+                <div class="partner-category">
+                    <i class="fas fa-industry fa-3x" aria-hidden="true"></i>
+                    <h3>Manufacturing</h3>
+                    <p>Production companies seeking skilled workers</p>
+                </div>
+                
+                <div class="partner-category">
+                    <i class="fas fa-hotel fa-3x" aria-hidden="true"></i>
+                    <h3>Hospitality</h3>
+                    <p>Hotels, restaurants, and tourism services</p>
+                </div>
+                
+                <div class="partner-category">
+                    <i class="fas fa-shopping-cart fa-3x" aria-hidden="true"></i>
+                    <h3>Retail</h3>
+                    <p>Stores and shops requiring customer-facing staff</p>
+                </div>
+                
+                <div class="partner-category">
+                    <i class="fas fa-landmark fa-3x" aria-hidden="true"></i>
+                    <h3>Corporate</h3>
+                    <p>Large companies and corporations with diverse staffing needs</p>
+                </div>
+                
+                <div class="partner-category">
+                    <i class="fas fa-heartbeat fa-3x" aria-hidden="true"></i>
+                    <h3>Service Sector</h3>
+                    <p>Various service providers looking for quality staff</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="contact" class="contact">
         <div class="container">
@@ -612,14 +912,14 @@
                     <div class="card-back">
                         <h3>Find Us</h3>
                         <div class="info-list">
-                            <div class="info-item">
-                                <p>Panitanki, Birgunj-8, Parsa (Nepal)</p>
+                            <div class="info-item"
+                                <p>Adarshnagar-3, Birgunj</p>
                             </div>
                             <div class="info-item">
-                                <p>Near BPC college old building</p>
+                                <p>Parsa, Nepal</p>
                             </div>
                             <div class="info-item">
-                                <a href="https://www.google.com/maps?q=27.0146427154541,84.8841705322266" target="_blank" aria-label="View location on Google Maps">View on Map</a>
+                                <a href="https://goo.gl/maps/yourLocationLink" target="_blank" aria-label="View on Google Maps">View on Map</a>
                             </div>
                         </div>
                         <p class="back-text">Tap to flip back</p>
@@ -629,98 +929,124 @@
         </div>
     </section>
 
-    <!-- Footer Section with improved mobile layout -->
-    <footer class="main-footer">
-        <div class="footer-container">
-            <div class="row">
-                <div class="footer-section">
-                    <div class="feedback-direct">
-                        <h4>Quick Feedback</h4>
-                        <form class="feedback-form">
-                            <div class="form-group">
-                                <input type="text" placeholder="Your Name" required aria-label="Your Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" placeholder="Your Email" required aria-label="Your Email">
-                            </div>
-                            <div class="form-group">
-                                <textarea placeholder="Your Message" rows="3" required aria-label="Your Message"></textarea>
-                            </div>
-                            <button type="submit" class="btn-submit">Send Feedback</button>
-                        </form>
-                    </div>
-                </div>
-
-                <!-- Connect With Us -->
-                <div class="footer-section">
-                    <h3>Connect With Us</h3>
-                    <div class="google-form-container">
-                        <p class="form-description">Complete our detailed application form:</p>
-                        <a href="https://docs.google.com/forms/d/1n0D3EIEe-HerrFZ4kg0aSSJUswhM18GXJ7Vv5Fz4qOE/viewform" target="_blank" class="google-form-btn" aria-label="Access Employment Application Form">
-                            <i class="fas fa-file-alt" aria-hidden="true"></i> Access Employment Application Form
-                        </a>
-                    </div>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/p/Parsa-Job-Center-PvtLtd-100095385249792/" target="_blank" class="social-icon facebook" aria-label="Visit our Facebook page">
-                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://wa.me/+9779865313388" target="_blank" class="social-icon whatsapp" aria-label="Contact us on WhatsApp">
-                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
-                        </a>
-                        <a href="viber://chat?number=%2B9779865313388" class="social-icon viber" aria-label="Contact us on Viber">
-                            <i class="fab fa-viber" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2025 Parsa Job Centre. All rights reserved.</p>
-                <p>Licensed by Government of Nepal</p>
-                <p>Designed by <a href="https://msr-portfolio.vercel.app/" target="_blank">MSR <i class="fas fa-code" aria-hidden="true"></i></a></p>
-            </div>
-        </div>
-    </footer>
-
+    <!-- WhatsApp Button -->
     <div class="whatsapp-button">
-        <a href="https://wa.me/9865313388" target="_blank" aria-label="Contact us on WhatsApp">
+        <a href="https://wa.me/9779865313388" aria-label="Contact us on WhatsApp">
             <i class="fab fa-whatsapp" aria-hidden="true"></i>
         </a>
     </div>
 
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="row">
+                <div class="footer-section">
+                    <h3>About Parsa Job Centre</h3>
+                    <p>Established in 2014, Parsa Job Centre has been connecting qualified candidates with top employers in Birgunj and beyond. We pride ourselves on our deep understanding of the local job market and our commitment to quality service.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#jobs">Job Types</a></li>
+                        <li><a href="#partnerships">Partnerships</a></li>
+                        <li><a href="#success">Success Stories</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Send Us Feedback</h3>
+                    <form class="feedback-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="social-media">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 Parsa Job Centre. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
     <script>
-        // Simple mobile menu toggle
+        // Mobile Navigation Toggle
         document.addEventListener('DOMContentLoaded', function() {
-            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
             const navLinks = document.querySelector('.nav-links');
             
-            if (menuBtn) {
-                menuBtn.addEventListener('click', function() {
-                    navLinks.classList.toggle('active');
-                });
-            }
-            
-            // Close menu when clicking on a link
-            const links = document.querySelectorAll('.nav-links a');
-            links.forEach(link => {
-                link.addEventListener('click', function() {
-                    navLinks.classList.remove('active');
-                });
+            mobileMenuBtn.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
             });
             
-            // Add touch support for cards
-            const cards = document.querySelectorAll('.contact-card');
-            cards.forEach(card => {
-                card.addEventListener('touchstart', function() {
-                    // This empty handler ensures the :active state works on iOS
+            // Simple Nepali Date and Time display
+            function updateNepaliDateTime() {
+                const now = new Date();
+                const nepaliClockElement = document.getElementById('nepali-clock');
+                const nepaliDateElement = document.getElementById('nepali-date');
+                
+                // Format time
+                const hours = now.getHours().toString().padStart(2, '0');
+                const minutes = now.getMinutes().toString().padStart(2, '0');
+                const seconds = now.getSeconds().toString().padStart(2, '0');
+                nepaliClockElement.textContent = `${hours}:${minutes}:${seconds}`;
+                
+                // This is a simplified approach - a real implementation would use a Nepali date conversion library
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                const dateStr = now.toLocaleDateString('en-US', options);
+                nepaliDateElement.textContent = dateStr;
+            }
+            
+            // Initial call and set interval
+            updateNepaliDateTime();
+            setInterval(updateNepaliDateTime, 1000);
+            
+            // Add card flip functionality for touch devices
+            const contactCards = document.querySelectorAll('.contact-card');
+            
+            contactCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    this.classList.toggle('flipped');
+                });
+                
+                card.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        this.classList.toggle('flipped');
+                    }
                 });
             });
         });
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/nepali-date-picker/2.0.1/nepali-datepicker.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
-    <script src="script.js"></script>
-    <script src="virtualScroll.js"></script>
 </body>
 </html>
