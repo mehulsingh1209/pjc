@@ -1088,11 +1088,11 @@ footer {
 
 @media screen and (min-width: 992px) {
     .footer-content {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr); /* Changed from 4 to 3 since we're removing the message section */
     }
 }
 
-/* WhatsApp Button - Adjusted for mobile */
+/* WhatsApp Button - Fixed and properly positioned */
 .whatsapp-button {
     position: fixed;
     bottom: 75px; /* Above bottom navigation */
@@ -1110,13 +1110,22 @@ footer {
     color: #fff;
     border-radius: 50%;
     font-size: 24px;
-
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
 /* Apply hover effects only on non-touch devices */
 @media (hover: hover) {
-    .social-float a:hover {
+    .whatsapp-button a:hover {
         transform: translateY(-3px);
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
 }
 
+/* For larger screens, adjust position */
+@media screen and (min-width: 992px) {
+    .whatsapp-button {
+        bottom: 30px;
+        right: 30px;
+    }
+}
