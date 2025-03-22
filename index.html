@@ -580,180 +580,7 @@
             font-size: 16px;
         }
         
-        /* Services Section Styles */
-        .services {
-            padding: 60px 0;
-            background-color: white;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .service-card {
-            background: var(--light-color);
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s, box-shadow 0.3s;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }
-
-        .service-icon {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            background: linear-gradient(145deg, var(--primary-color), var(--secondary-color));
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-
-        .service-content h3 {
-            font-size: 22px;
-            margin-bottom: 15px;
-            color: var(--dark-color);
-        }
-
-        .service-content p {
-            color: #666;
-            line-height: 1.6;
-        }
-        
-        /* Desktop Styles - Applied with Media Queries */
-        @media (min-width: 768px) {
-            .container {
-                padding: 0 30px;
-            }
-            
-            .mobile-menu-btn {
-                display: none;
-            }
-            
-            .logo {
-                float: left;
-            }
-            
-            nav {
-                float: right;
-                padding: 15px 0;
-            }
-            
-            .nav-links {
-                display: flex !important;
-                background: none;
-                box-shadow: none;
-                width: auto;
-            }
-            
-            .nav-links li {
-                display: inline-block;
-                border-bottom: none;
-            }
-            
-            .nav-links a {
-                padding: 10px 15px;
-            }
-            
-            .nav-links a.cta-btn {
-                margin: 0 0 0 15px;
-            }
-            
-            .hero-content h1 {
-                font-size: 42px;
-            }
-            
-            .hero-content p {
-                font-size: 18px;
-            }
-            
-            .hero-buttons {
-                flex-direction: row;
-                justify-content: center;
-            }
-            
-            .contact-grid {
-                grid-template-columns: repeat(2, 1fr);
-                padding: 0;
-                max-width: 800px;
-            }
-            
-            .row {
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-between;
-            }
-            
-            .footer-section {
-                flex: 1;
-                min-width: 300px;
-            }
-            
-            .job-categories {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .partner-categories {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .service-card {
-                text-align: left;
-                flex-direction: row;
-                align-items: flex-start;
-            }
-            
-            .service-icon {
-                margin-right: 20px;
-                margin-bottom: 0;
-            }
-            
-            .about-content {
-                flex-direction: row;
-            }
-        }
-        
-        @media (min-width: 992px) {
-            .job-categories {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            
-            .partner-categories {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            
-            .services-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-        
-        /* Accessibility improvements */
-        input:focus, 
-        textarea:focus, 
-        button:focus, 
-        a:focus {
-            outline: 3px solid var(--accent-color);
-            outline-offset: 2px;
-        }
-    </style>
+       
 </head>
 <body>
     <header>
@@ -835,79 +662,78 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-<section id="services" class="services">
-    <div class="container">
-        <div class="section-header">
-            <h2>Our Services</h2>
-            <p>Comprehensive Employment Solutions</p>
+    <section id="services" class="services">
+    <div class="container" style="padding: 0 15px; max-width: 1200px; margin: 0 auto;">
+        <div class="section-header" style="text-align: center; margin-bottom: 2rem;">
+            <h2 style="font-size: clamp(1.8rem, 5vw, 2.5rem); margin-bottom: 0.5rem;">Our Services</h2>
+            <p style="font-size: clamp(1rem, 3vw, 1.2rem); color: #666;">Comprehensive Employment Solutions</p>
         </div>
         
-        <div class="services-content">
-            <div class="services-text">
-                <h3>What We Offer</h3>
-                <p>At Parsa Job Centre, we provide a comprehensive range of employment services designed to meet the diverse needs of both job seekers and employers throughout Nepal.</p>
+        <div class="services-content" style="display: flex; flex-direction: column; gap: 2rem; margin-bottom: 2rem;">
+            <div class="services-text" style="width: 100%;">
+                <h3 style="font-size: clamp(1.4rem, 4vw, 1.8rem); margin-bottom: 1rem;">What We Offer</h3>
+                <p style="font-size: clamp(0.95rem, 3vw, 1rem); margin-bottom: 1rem; line-height: 1.6;">At Parsa Job Centre, we provide a comprehensive range of employment services designed to meet the diverse needs of both job seekers and employers throughout Nepal.</p>
                 
-                <p>Our dedicated team of recruitment specialists leverages years of industry experience and deep market knowledge to deliver tailored solutions that drive success for all our clients. Whether you're looking for your next career opportunity or seeking top talent for your organization, we have the expertise to help you achieve your goals.</p>
+                <p style="font-size: clamp(0.95rem, 3vw, 1rem); margin-bottom: 1rem; line-height: 1.6;">Our dedicated team of recruitment specialists leverages years of industry experience and deep market knowledge to deliver tailored solutions that drive success for all our clients. Whether you're looking for your next career opportunity or seeking top talent for your organization, we have the expertise to help you achieve your goals.</p>
                 
-                <p>We pride ourselves on our personalized approach, attention to detail, and commitment to excellence in every service we provide.</p>
+                <p style="font-size: clamp(0.95rem, 3vw, 1rem); margin-bottom: 1.5rem; line-height: 1.6;">We pride ourselves on our personalized approach, attention to detail, and commitment to excellence in every service we provide.</p>
                 
-                <div class="services-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">3</div>
-                        <div class="stat-text">Core Services</div>
+                <div class="services-stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem; margin: 2rem 0;">
+                    <div class="stat-item" style="text-align: center; padding: 1rem; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <div class="stat-number" style="font-size: clamp(1.8rem, 5vw, 2.2rem); font-weight: bold; color: #4a89dc; margin-bottom: 0.5rem;">3</div>
+                        <div class="stat-text" style="font-size: clamp(0.8rem, 2vw, 0.9rem);">Core Services</div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-text">Client Satisfaction</div>
+                    <div class="stat-item" style="text-align: center; padding: 1rem; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <div class="stat-number" style="font-size: clamp(1.8rem, 5vw, 2.2rem); font-weight: bold; color: #4a89dc; margin-bottom: 0.5rem;">100%</div>
+                        <div class="stat-text" style="font-size: clamp(0.8rem, 2vw, 0.9rem);">Client Satisfaction</div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-number">24/7</div>
-                        <div class="stat-text">Support Available</div>
+                    <div class="stat-item" style="text-align: center; padding: 1rem; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <div class="stat-number" style="font-size: clamp(1.8rem, 5vw, 2.2rem); font-weight: bold; color: #4a89dc; margin-bottom: 0.5rem;">24/7</div>
+                        <div class="stat-text" style="font-size: clamp(0.8rem, 2vw, 0.9rem);">Support Available</div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-number">1000+</div>
-                        <div class="stat-text">Monthly Placements</div>
+                    <div class="stat-item" style="text-align: center; padding: 1rem; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+                        <div class="stat-number" style="font-size: clamp(1.8rem, 5vw, 2.2rem); font-weight: bold; color: #4a89dc; margin-bottom: 0.5rem;">1000+</div>
+                        <div class="stat-text" style="font-size: clamp(0.8rem, 2vw, 0.9rem);">Monthly Placements</div>
                     </div>
                 </div>
             </div>
             
-            <div class="services-image">
-                <img src="services.jpg" alt="Parsa Job Centre Services">
+            <div class="services-image" style="width: 100%; text-align: center;">
+                <img src="services.jpg" alt="Parsa Job Centre Services" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
             </div>
         </div>
         
-        <div class="services-grid" style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 30px;">
+        <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px;">
             <!-- Job Placement & Matching -->
-            <div class="service-card" style="flex: 1 1 300px; border: 1px solid #eee; border-radius: 8px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                <div class="service-icon" style="margin-bottom: 15px; color: #4a89dc;">
+            <div class="service-card" style="border: 1px solid #eee; border-radius: 12px; padding: 25px 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                <div class="service-icon" style="margin-bottom: 20px; color: #4a89dc; font-size: 2rem; text-align: center;">
                     <i class="fas fa-handshake" aria-hidden="true"></i>
                 </div>
-                <div class="service-content">
-                    <h3>Job Placement & Matching</h3>
-                    <p>We connect qualified candidates with suitable employers based on skills, experience, and company requirements. Our personalized matching process ensures the right fit for both parties, considering cultural fit, career goals, and growth potential for long-term success.</p>
+                <div class="service-content" style="flex-grow: 1;">
+                    <h3 style="font-size: clamp(1.2rem, 4vw, 1.5rem); margin-bottom: 1rem; color: #333; text-align: center;">Job Placement & Matching</h3>
+                    <p style="font-size: clamp(0.9rem, 3vw, 1rem); line-height: 1.6; color: #555;">We connect qualified candidates with suitable employers based on skills, experience, and company requirements. Our personalized matching process ensures the right fit for both parties, considering cultural fit, career goals, and growth potential for long-term success.</p>
                 </div>
             </div>
             
             <!-- Skill Development & Training -->
-            <div class="service-card" style="flex: 1 1 300px; border: 1px solid #eee; border-radius: 8px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                <div class="service-icon" style="margin-bottom: 15px; color: #4a89dc;">
+            <div class="service-card" style="border: 1px solid #eee; border-radius: 12px; padding: 25px 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                <div class="service-icon" style="margin-bottom: 20px; color: #4a89dc; font-size: 2rem; text-align: center;">
                     <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                 </div>
-                <div class="service-content">
-                    <h3>Skill Development & Training</h3>
-                    <p>We offer comprehensive skill development programs tailored to industry demands. Our training modules include technical skills, soft skills, and professional development workshops that help candidates enhance their employability and prepare for success in today's competitive job market.</p>
+                <div class="service-content" style="flex-grow: 1;">
+                    <h3 style="font-size: clamp(1.2rem, 4vw, 1.5rem); margin-bottom: 1rem; color: #333; text-align: center;">Skill Development & Training</h3>
+                    <p style="font-size: clamp(0.9rem, 3vw, 1rem); line-height: 1.6; color: #555;">We offer comprehensive skill development programs tailored to industry demands. Our training modules include technical skills, soft skills, and professional development workshops that help candidates enhance their employability and prepare for success in today's competitive job market.</p>
                 </div>
             </div>
             
-            <!-- national Job Placements -->
-            <div class="service-card" style="flex: 1 1 300px; border: 1px solid #eee; border-radius: 8px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                <div class="service-icon" style="margin-bottom: 15px; color: #4a89dc;">
+            <!-- International Job Placements -->
+            <div class="service-card" style="border: 1px solid #eee; border-radius: 12px; padding: 25px 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+                <div class="service-icon" style="margin-bottom: 20px; color: #4a89dc; font-size: 2rem; text-align: center;">
                     <i class="fas fa-globe-asia" aria-hidden="true"></i>
                 </div>
-                <div class="service-content">
-                    <h3>Support for All Over Nepal Job Placements</h3>
-                    <p>We provide end-to-end assistance for Nepali workers seeking opportunities abroad cities and villages. Our services include documentation support, pre-departure training, cultural orientation, and ongoing support throughout the employment process, ensuring safe and beneficial overseas employment.</p>
+                <div class="service-content" style="flex-grow: 1;">
+                    <h3 style="font-size: clamp(1.2rem, 4vw, 1.5rem); margin-bottom: 1rem; color: #333; text-align: center;">Support for International Job Placements</h3>
+                    <p style="font-size: clamp(0.9rem, 3vw, 1rem); line-height: 1.6; color: #555;">We provide end-to-end assistance for Nepali workers seeking opportunities abroad. Our services include documentation support, pre-departure training, cultural orientation, and ongoing support throughout the international employment process, ensuring safe and beneficial overseas employment.</p>
                 </div>
             </div>
         </div>
