@@ -1163,12 +1163,12 @@
 
     <!-- Footer Section -->
     <!-- Footer Section -->
+<!-- Footer Section -->
 <footer class="main-footer">
     <div class="container footer-container">
         <div class="row">
-            <div class="footer-section about-section">
-                <h3>About Parsa Job Centre</h3>
-                <p>Established in 2014, Parsa Job Centre has been a trusted recruitment partner in Birgunj, Nepal. We connect qualified candidates with top employers and provide comprehensive employment solutions.</p>
+            <div class="footer-section contact-section">
+                <h3>Contact Us</h3>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/p/Parsa-Job-Center-PvtLtd-100095385249792/" class="social-icon" aria-label="Facebook">
                         <i class="fab fa-facebook-f" aria-hidden="true"></i>
@@ -1179,33 +1179,25 @@
                     <a href="viber://chat?number=+9779865313388" class="social-icon" aria-label="Viber">
                         <i class="fab fa-viber" aria-hidden="true"></i>
                     </a>
-                    <a href="https://msr-portfolio.vercel.app/" class="social-icon" aria-label="Website Developer - MSR">
-                        <i class="fas fa-code" aria-hidden="true"></i>
-                    </a>
                 </div>
-            </div>
-            
-            <div class="footer-section links-section">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#jobs">Job Types</a></li>
-                    <li><a href="#partnerships">Partnerships</a></li>
-                    <li><a href="#success">Success Stories</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="terms.html">Terms & Conditions</a></li>
-                </ul>
             </div>
             
             <div class="footer-section feedback-section">
                 <h3>Share Your Feedback</h3>
                 <div class="feedback-box">
-                    <p>We value your opinion! Help us improve our services by filling out our feedback form.</p>
+                    <p>Fill Out Your Job Application Form</p>
                     <a href="https://docs.google.com/forms/d/1n0D3EIEe-HerrFZ4kg0aSSJUswhM18GXJ7Vv5Fz4qOE/" target="_blank" class="google-form-btn">
-                        <i class="fab fa-google" aria-hidden="true"></i> Fill Out Feedback Form
+                        <i class="fab fa-google" aria-hidden="true"></i> Submit Feedback
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section developer-section">
+                <h3>Website Developer</h3>
+                <div class="developer-box">
+                    <p>This website was developed by MSR</p>
+                    <a href="https://msr-portfolio.vercel.app/" class="developer-link" aria-label="Website Developer - MSR">
+                        <i class="fas fa-code" aria-hidden="true"></i> Visit Developer
                     </a>
                 </div>
             </div>
@@ -1260,8 +1252,77 @@
     border: 1px solid rgba(255,255,255,0.2);
 }
 
-.footer-section.feedback-section {
+.developer-box {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.developer-link {
+    display: inline-flex;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.developer-link i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.developer-link:hover {
+    background-color: #222;
+    color: #4CAF50;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.footer-section {
     margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.1);
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.social-icon[aria-label="Facebook"]:hover {
+    background-color: #3b5998;
+}
+
+.social-icon[aria-label="WhatsApp"]:hover {
+    background-color: #25D366;
+}
+
+.social-icon[aria-label="Viber"]:hover {
+    background-color: #7360f2;
 }
 </style>
     <!-- JavaScript -->
